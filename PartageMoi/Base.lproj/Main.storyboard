@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PartageMoi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partager moi !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1m-5d-JTG">
+                                <rect key="frame" x="20" y="20" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-gT-7of">
+                                <rect key="frame" x="20" y="106" width="335" height="204"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG0-6t-e4e">
+                                <rect key="frame" x="20" y="318" width="335" height="30"/>
+                                <state key="normal" title="Envoyer">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsu-bt-eGv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saisir le texte à partager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-1b-BjB">
+                                <rect key="frame" x="20" y="77" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uw-YA-3RG">
+                                <rect key="frame" x="20" y="356" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3921568627" green="0.55294117649999996" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ba9-1b-BjB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4fb-cn-5Ox"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tG0-6t-e4e" secondAttribute="trailing" constant="20" id="96H-kC-UPB"/>
+                            <constraint firstItem="Jsv-gT-7of" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G0h-pN-38W"/>
+                            <constraint firstItem="0uw-YA-3RG" firstAttribute="top" secondItem="tG0-6t-e4e" secondAttribute="bottom" constant="8" id="G2J-u1-Kd3"/>
+                            <constraint firstItem="o1m-5d-JTG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G5v-kP-Fgi"/>
+                            <constraint firstItem="Ba9-1b-BjB" firstAttribute="top" secondItem="o1m-5d-JTG" secondAttribute="bottom" constant="27" id="LfN-6v-LUK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o1m-5d-JTG" secondAttribute="trailing" constant="20" id="LgD-3f-pVq"/>
+                            <constraint firstItem="o1m-5d-JTG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tx7-Gs-DWo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jsv-gT-7of" secondAttribute="trailing" constant="20" id="VDh-9C-Nkx"/>
+                            <constraint firstItem="tG0-6t-e4e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WJW-X5-U0r"/>
+                            <constraint firstItem="0uw-YA-3RG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ahS-0e-dgG"/>
+                            <constraint firstItem="Jsv-gT-7of" firstAttribute="top" secondItem="Ba9-1b-BjB" secondAttribute="bottom" constant="8" id="kyG-bF-bv6"/>
+                            <constraint firstItem="tG0-6t-e4e" firstAttribute="top" secondItem="Jsv-gT-7of" secondAttribute="bottom" constant="8" id="pme-kh-2bd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ba9-1b-BjB" secondAttribute="trailing" constant="20" id="soE-hM-JQe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0uw-YA-3RG" secondAttribute="trailing" constant="20" id="vDq-VI-1pe"/>
+                            <constraint firstItem="0uw-YA-3RG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="yXl-Gw-8jK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="0uw-YA-3RG" id="LNM-Wl-Xy1"/>
+                        <outlet property="shareTextView" destination="Jsv-gT-7of" id="m7t-8Z-UE7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="123"/>
+        </scene>
+    </scenes>
+</document>
